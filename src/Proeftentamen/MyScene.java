@@ -66,6 +66,7 @@ public class MyScene extends Scene{
 		
 		rootpane.getChildren().add(menubar);
 		rootpane.getChildren().add(currentPane);
+		
 		rootpane.setPrefHeight(300);
 		rootpane.setPrefHeight(300);
 		rootpane.setFillWidth(true);

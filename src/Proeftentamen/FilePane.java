@@ -12,6 +12,10 @@ public class FilePane extends BorderPane{
 	
 	public FilePane() {
 		txta = new TextArea();
+		this.setHeight(300);
+		this.setWidth(300);
+		
+		txta.setwi
 		
 		ButtonPane pane = new ButtonPane();
 		

@@ -34,5 +34,10 @@ public class DrawPane extends Pane{
 		tree.setCenterX(150);
 		tree.setCenterY(130);
 		tree.setFill(Color.GREEN);
+		
+		this.getChildren().add(heaven);
+		this.getChildren().add(ground);
+		this.getChildren().add(stump);
+		this.getChildren().add(tree);
 	}
 }

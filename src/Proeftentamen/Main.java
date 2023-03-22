@@ -14,8 +14,6 @@ public class Main extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		primaryStage.setTitle("PROG3 Oefentoets");
-		primaryStage.setHeight(500);
-		primaryStage.setWidth(500);
 		
 		MyScene scene = new MyScene(new Parent() {
 			

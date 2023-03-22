@@ -16,10 +16,20 @@ public class BackPane extends FlowPane{
 		
 		this.setWidth(300);
 		this.setHeight(300);
+		this.setBackground(
+			new Background(
+				new BackgroundFill(
+					Color.WHITE,
+					null, 
+					getInsets()
+				)
+			)
+		);
 		
 		txtField.setPrefWidth(100);
 		txtField.setPrefHeight(30);
-		txtField.setCenterShape(true);
+
+		this.getChildren().add(txtField);
 		txtField.setOnKeyPressed(args -> {
 			//guard
 			Border border = txtField.getBorder();
@@ -38,7 +48,5 @@ public class BackPane extends FlowPane{
 				)
 			);
 		});
-		
-		this.getChildren().add(txtField);
 	}
 }
