@@ -30,6 +30,8 @@ public class MyScene extends Scene{
 			});
 			rootpane.getChildren().remove(currentPane);
 			currentPane = new DrawPane();
+			currentPane.prefHeight(300);
+			currentPane.prefWidth(300);
 			rootpane.getChildren().add(currentPane);
 			((MenuItem)args.getSource()).setDisable(true);
 		});
@@ -42,6 +44,8 @@ public class MyScene extends Scene{
 			});
 			rootpane.getChildren().remove(currentPane);
 			currentPane = new BackPane();
+			currentPane.prefHeight(300);
+			currentPane.prefWidth(300);
 			rootpane.getChildren().add(currentPane);
 			((MenuItem)args.getSource()).setDisable(true);
 		});
@@ -54,6 +58,8 @@ public class MyScene extends Scene{
 			});
 			rootpane.getChildren().remove(currentPane);
 			currentPane = new FilePane();
+			currentPane.prefHeight(300);
+			currentPane.prefWidth(300);
 			rootpane.getChildren().add(currentPane);
 			((MenuItem)args.getSource()).setDisable(true);
 		});

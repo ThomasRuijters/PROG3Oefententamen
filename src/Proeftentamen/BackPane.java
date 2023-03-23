@@ -1,5 +1,6 @@
 package Proeftentamen;
 
+import javafx.geometry.Pos;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Background;
@@ -13,13 +14,14 @@ public class BackPane extends FlowPane{
 	
 	public BackPane() {
 		txtField = new TextField();
+		this.setAlignment(Pos.CENTER);
 		
 		this.setWidth(300);
-		this.setHeight(300);
+		this.setMinHeight(300);
 		this.setBackground(
 			new Background(
 				new BackgroundFill(
-					Color.WHITE,
+					Color.RED,
 					null, 
 					getInsets()
 				)

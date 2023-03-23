@@ -5,7 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 
@@ -14,10 +17,14 @@ public class FilePane extends BorderPane{
 	
 	public FilePane() {
 		txta = new TextArea();
-		this.setHeight(300);
-		this.setWidth(300);
 		
+		this.setBackground(new Background(new BackgroundFill(Color.RED, null, null)));
+		this.setPrefSize(300, 300);
+
 		ButtonPane pane = new ButtonPane();
+
+		this.setCenter(txta);
+		this.setBottom(pane);
 		
 		pane.setOnMouseClicked(args -> {
 			FileChooser fc = new FileChooser();
@@ -45,8 +52,5 @@ public class FilePane extends BorderPane{
 				e.printStackTrace();
 			}
 		});
-
-		this.getChildren().add(txta);
-		this.getChildren().add(pane);
 	}
 }
